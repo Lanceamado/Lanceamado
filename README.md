@@ -20,6 +20,20 @@
             text-align: center;
         }
 
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
         section {
             max-width: 800px;
             margin: 20px auto;
@@ -41,6 +55,12 @@
             bottom: 0;
             width: 100%;
         }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -50,14 +70,19 @@
         <p>Renting Chairs and Tables, Providing Events Tailored to Your Needs</p>
     </header>
 
-    <section>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#rental-sounds">Rental Sounds</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="about">
         <h2>About Us</h2>
         <p>Welcome to Ellamae's Catering, your one-stop solution for all your event needs. We specialize in renting chairs and tables and ensuring that your events are memorable and stress-free. Our dedicated team is committed to making your vision a reality.</p>
-        <!-- Add an image here -->
-        <img src="path/to/about_us_image.jpg" alt="About Us Image" style="max-width: 100%; height: auto;">
     </section>
 
-    <section>
+    <section id="services">
         <h2>Services</h2>
         <p>Discover our range of services:</p>
         <ul>
@@ -66,11 +91,18 @@
             <li>Customized Catering Packages</li>
             <!-- Add more services as needed -->
         </ul>
-        <!-- Add a video here -->
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
     </section>
 
-    <section>
+    <section id="rental-sounds">
+        <h2>Rental Sounds</h2>
+        <p>Explore our selection of rental sounds for your events:</p>
+        <img src="path/to/speakers.jpg" alt="Speakers">
+        <p>High-quality speakers for crystal-clear sound.</p>
+        <img src="path/to/sound-system.jpg" alt="Sound System">
+        <p>State-of-the-art sound systems for an immersive experience.</p>
+    </section>
+
+    <section id="contact">
         <h2>Contact Us</h2>
         <p>For inquiries and bookings, please contact us at:</p>
         <p>Email: ellamae@example.com</p>
